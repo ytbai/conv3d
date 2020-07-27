@@ -24,7 +24,7 @@ class BaselineSkipAutoreg(nn.Module):
     )
 
     self.mod_1_2 = nn.Sequential(
-	ConvTranspose3d(16*2, 16),
+	ConvTranspose3dBlock(16*2, 16),
     )
 
     self.mod_3 = nn.Sequential(
