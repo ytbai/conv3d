@@ -20,16 +20,16 @@ class BaselineSkipAutoreg(nn.Module):
 	Conv3dDownsample(16),
         Conv3dBlock(32), Conv3dBlock(32), 
         ConvTranspose3dBlock(32), ConvTranspose3dBlock(32), 
-        Conv3dUpsample(32),
+        ConvTranspose3dUpsample(32),
     )
 
     self.mod_1_2 = nn.Sequential(
-	Conv3dUnblock(16*2, 16),
+	ConvTranspose3d(16*2, 16),
     )
 
     self.mod_3 = nn.Sequential(
         ConvTranspose3dBlock(16), ConvTranspose3dBlock(16), 
-        Conv3dUpsample(16),
+        ConvTranspose3dUpsample(16),
 	ConvTranspose3dBlock(8), ConvTranspose3dBlock(8), 
         nn.Conv3d(8, 1, kernel_size = (10,1,1)),
         nn.Sigmoid(),
