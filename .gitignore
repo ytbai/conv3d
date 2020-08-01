@@ -1,0 +1,5 @@
+
+*.pyc
+main_colab.ipynb
+mse_eval_colab.ipynb
+plot_maker_colab.ipynb
