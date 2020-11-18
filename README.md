@@ -6,6 +6,7 @@ This repository provides code for a project I did on video prediction using 3d c
 
 ```main.ipynb``` --- Notebook explaining how to use the code  
 ```plot_maker.ipynb``` --- Notebook for making all the plots in the blog post  
+```train.ipynb``` --- Notebook for training and cross-validating models
 ```model_factory/models/*``` --- Python scripts for building the neural network models  
 ```model_factory/state_dict/*``` --- Saved weights for the neural network models  
 ```data_factory/data/*``` --- Moving MNIST dataset, copied directly from the [E3D-LSTM repository](https://github.com/google/e3d_lstm) by Yang, et al.  
