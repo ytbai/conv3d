@@ -25,7 +25,7 @@ def train_once(model, criterion, num_frames_input, train_dataloader, optimizer, 
 
 
 
-def valid_once(model_meta, criterion, num_frames_input, val_dataloader):
+def valid_once(model, criterion, num_frames_input, val_dataloader):
   model.eval()
   loss_valid_epoch = []
   for frames_all in val_dataloader:
