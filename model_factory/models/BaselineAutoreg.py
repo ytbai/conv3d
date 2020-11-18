@@ -32,7 +32,7 @@ class BaselineAutoreg(nn.Module):
 
 
   def pred_frames(self, frames_all):
-    nun_frames_input = 10
+    num_frames_input = 10
     num_frames_all = 20
     frames_pred = []
     for t in range(num_frames_all-num_frames_input):
